@@ -1,9 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: black;
     margin: 0; 
     padding: 0;
 }
-
+.links{
+    color:white;
+}
 .menu{  
     background-color: black;
+    text-align: center;
+}
+.menu ul{ 
+    
+    display: inline-flex;
+    list-style: none;
+} 
+.menu ul li{
+    width: 300px;
+    padding: 15px;
+    margin: 15px;
+}
+.design, .menu ul li:hover
+{
+    width:20px;
+    height: 20px;
+    margin: 20px;
+    padding:20px;
+    border-radius: 90px;
+    border: 1px white;
 }
