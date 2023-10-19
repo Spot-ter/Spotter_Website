@@ -9,15 +9,12 @@ body{
     margin: 0; 
     padding: 0;
 }
-.links{
-    color:white;
-}
+
 .menu{  
     background-color: black;
     text-align: center;
 }
 .menu ul{ 
-    
     display: inline-flex;
     list-style: none;
 } 
@@ -25,6 +22,12 @@ body{
     width: 300px;
     padding: 15px;
     margin: 15px;
+    
+}
+a:link{
+    color:white;
+    background-color: transparent;
+    text-decoration: none;
 }
 .menu-item{
     padding: 15px;
@@ -34,4 +37,31 @@ body{
 }
 .menu-item:hover{
     transform: scale(1.1);
+}
+.camera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:900px;
+    overflow: hidden;
+}
+
+.container{
+    width:318px;
+    height: 310px;
+    position: absolute;
+    overflow: hidden;
+    background-color: blue;
+    border-radius: 50%;
+    padding:10px;
+    top: 44.8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#circle{
+    position: relative;
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
 }
