@@ -29,15 +29,24 @@ a:link{
     background-color: transparent;
     text-decoration: none;
 }
-.menu-item{
-    padding: 15px;
-    margin: 15px;
-    transition: transform 0.2s;
-    cursor:pointer;
+
+.link {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #928585;
+    padding: 15px  50px;
+    /* text-align: center; */
+    /* text-decoration: none; */
+    border: 2px solid #ffffff;
+    border-radius: 300px;
+    transition: background-color 0.3s ease;
 }
-.menu-item:hover{
+
+.link:hover {
+    background-color: #e4ecf1;
     transform: scale(1.1);
 }
+
 .camera{
     display: flex;
     justify-content: center;
