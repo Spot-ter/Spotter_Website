@@ -46,7 +46,7 @@ a:link{
     overflow: hidden;
 }
 
-.container{
+/**.container{
     width:318px;
     height: 310px;
     position: absolute;
@@ -57,9 +57,9 @@ a:link{
     top: 44.8%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+}**/
 #circle{
-    position: relative;
+    position: absolute;
     width:30px;
     height: 30px;
     border-radius: 50%;
