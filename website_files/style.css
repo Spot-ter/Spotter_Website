@@ -51,8 +51,8 @@ a:link{
     transform: scale(1.1);
 }
 
-#circle2 , 
-#circle2 img{
+#circle1 , 
+#circle1 img{
     position: absolute;
     top: 50%;
     left: 50%;

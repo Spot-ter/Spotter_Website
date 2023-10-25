@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const angledegree = angle(mouseX, mouseY, cameraX, cameraY);
         console.log(angledegree);
 
-        document.getElementById('Circle2').style.transform = `rotate(${90 + angledegree}deg)`;
+        document.getElementById("circle1").style.transform = `rotate(${90 + angledegree}deg)`;
 
 
     });
