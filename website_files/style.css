@@ -33,7 +33,7 @@ a:link{
 .link {
     display: inline-block;
     background-color: #ffffff;
-    color: #928585;
+    color: #fff;
     padding: 15px  50px;
     /* text-align: center; */
     /* text-decoration: none; */
@@ -45,6 +45,7 @@ a:link{
 .link:hover {
     background-color: #e4ecf1;
     transform: scale(1.1);
+    color:black;
 }
 
 .camera{
