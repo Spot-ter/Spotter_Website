@@ -1,17 +1,13 @@
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 body{
     background-color: black;
-    color: #fff;
     margin: 0; 
     padding: 0;
-}
-
-main{
-    display: grid;
-    place-content: center;
-    min-height: 100vh;
-    position: relative;
 }
 
 .menu{  
@@ -51,11 +47,30 @@ a:link{
     transform: scale(1.1);
 }
 
-#circle1 , 
-#circle1 img{
+.camera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:900px;
+    overflow: hidden;
+}
+
+.container{
+    width:318px;
+    height: 310px;
     position: absolute;
-    top: 50%;
+    overflow: hidden;
+    
+    border-radius: 50%;
+    padding:10px;
+    top: 44.8%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
+#circle{
+    position: relative;
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+}
