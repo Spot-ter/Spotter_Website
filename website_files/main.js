@@ -1,3 +1,47 @@
+const canvas = document.getElementById("matrix");
+const context = canvas.getContext('2d');
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+const letters = "ACEBJEALEPCAJSCPQYUECBNSADIWJQDMCSIA";
+const numbers = "1829321984241241264912";
+
+const alphabet = letters + numbers;
+
+const fontSize = 16;
+const columns = canvas.width / fontSize;
+
+const rainDrop = [];
+
+for (let x = 0; x < columns; x++) {
+    rainDrop[x] = 1;
+}
+
+const drop = () => {
+    context.fillStyle = 'rgba(0,0,0,0.05)';
+    context.fillRect(0,0,canvas.width,canvas.height);
+
+    context.fillStyle = '#0F0';
+    context.font = fontSize + 'px monospace';
+
+    for (let i = 0; i < rainDrop.length; i++) {
+        const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+        context.fillText(text, i * fontSize, rainDrop[i] * fontSize);
+
+        if (rainDrop[i] * fontSize > canvas.height && Math.random() > 0.975) {
+            rainDrop[i] = 0;
+        }
+        rainDrop[i]++;
+    }
+};
+
+setInterval(drop, 30);
+
+
+
+
+
 var mouseX = 0, mouseY = 0;
 var container = document.querySelector('.container');
 var containerRect = container.getBoundingClientRect();
