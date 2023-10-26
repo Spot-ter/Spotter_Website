@@ -14,6 +14,7 @@ body{
 .menu{  
     background-color: black;
     text-align: center;
+    
 }
 .menu ul{ 
     display: inline-flex;
@@ -54,8 +55,7 @@ a:link{
     justify-content: center;
     align-items: center;
     height:900px;
-    overflow: hidden;
-    z-index: 2;
+    
 }
 #matrix{
     position: absolute;

@@ -1,43 +1,12 @@
-const canvas = document.getElementById("matrix");
-const context = canvas.getContext('2d');
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+const cameraElement = document.querySelector('.camera');
+const containerElement = document.querySelector('.container');
+const circleElement = document.getElementById('circle');
 
-const letters = "ACEBJEALEPCAJSCPQYUECBNSADIWJQDMCSIA";
-const numbers = "1829321984241241264912";
 
-const alphabet = letters + numbers;
-
-const fontSize = 16;
-const columns = canvas.width / fontSize;
-
-const rainDrop = [];
-
-for (let x = 0; x < columns; x++) {
-    rainDrop[x] = 1;
-}
-
-const drop = () => {
-    context.fillStyle = 'rgba(0,0,0,0.05)';
-    context.fillRect(0,0,canvas.width,canvas.height);
-
-    context.fillStyle = '#0F0';
-    context.font = fontSize + 'px monospace';
-
-    for (let i = 0; i < rainDrop.length; i++) {
-        const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
-        context.fillText(text, i * fontSize, rainDrop[i] * fontSize);
-
-        if (rainDrop[i] * fontSize > canvas.height && Math.random() > 0.975) {
-            rainDrop[i] = 0;
-        }
-        rainDrop[i]++;
-    }
-};
-
-setInterval(drop, 30);
-
+cameraElement.style.zIndex = '2';
+containerElement.style.zIndex = '2';
+circleElement.style.zIndex = '2';
 
 
 
@@ -82,3 +51,44 @@ var loop = setInterval(function() {
     circle.style.left = xp + containerRadius - circle.clientWidth / 2 + 'px';
     circle.style.top = yp + containerRadius - circle.clientHeight / 2 + 'px';
 }, 30);
+
+const canvas = document.getElementById("matrix");
+const context = canvas.getContext('2d');
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+const letters = "ACEBJEALEPCAJSCPQYUECBNSADIWJQDMCSIA";
+const numbers = "1829321984241241264912";
+
+const alphabet = letters + numbers;
+
+const fontSize = 16;
+const columns = canvas.width / fontSize;
+
+const rainDrop = [];
+
+for (let x = 0; x < columns; x++) {
+    rainDrop[x] = 1;
+}
+
+const drop = () => {
+    context.fillStyle = 'rgba(0,0,0,0.05)';
+    context.fillRect(0,0,canvas.width,canvas.height);
+
+    context.fillStyle = '#0F0';
+    context.font = fontSize + 'px monospace';
+
+    for (let i = 0; i < rainDrop.length; i++) {
+        const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+        context.fillText(text, i * fontSize, rainDrop[i] * fontSize);
+
+        if (rainDrop[i] * fontSize > canvas.height && Math.random() > 0.975) {
+            rainDrop[i] = 0;
+        }
+        rainDrop[i]++;
+    }
+};
+
+setInterval(drop, 30);
+
