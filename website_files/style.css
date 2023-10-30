@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: black;
+    background-color: #1C1C1C;
     margin: 0; 
     padding: 0;
     height: 100%;
@@ -12,9 +12,10 @@ body{
 }
 
 .menu{  
-    background-color: black;
+    background-color: transparent;
     text-align: center;
-    
+    z-index: 999;
+    position: relative;
 }
 .menu ul{ 
     display: inline-flex;
@@ -55,6 +56,9 @@ a:link{
     justify-content: center;
     align-items: center;
     height:900px;
+    z-index: 998;
+    position: relative;
+    
     
 }
 #matrix{
@@ -62,6 +66,7 @@ a:link{
     top:0;
     left: 0;
     z-index: 1;
+    
 }
 .container{
     width:318px;
@@ -74,6 +79,7 @@ a:link{
     top: 48.7%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 998;
 }
 #circle{
     position: relative;
@@ -81,6 +87,7 @@ a:link{
     height: 30px;
     border-radius: 50%;
     background-color: red;
+    z-index: 999;
 }
 .Spoter{
     color:#fff;
@@ -90,4 +97,8 @@ a:link{
     left: 50%;
     transform: translateX(-50%);
     font-size: 70px;
+    z-index: 999;
+    font-family: 'Anonymous Pro', monospace;
+    background-color: transparent;
+
 }

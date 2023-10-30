@@ -4,9 +4,11 @@ const containerElement = document.querySelector('.container');
 const circleElement = document.getElementById('circle');
 
 
-cameraElement.style.zIndex = '2';
+/*cameraElement.style.zIndex = '2';
 containerElement.style.zIndex = '2';
-circleElement.style.zIndex = '2';
+circleElement.style.zIndex = '2';*/
+
+
 
 
 
