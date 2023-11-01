@@ -102,3 +102,6 @@ a:link{
     background-color: transparent;
 
 }
+.image{
+    transform: translate(100px, 100px);
+}
