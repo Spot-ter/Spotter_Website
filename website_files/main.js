@@ -1,18 +1,4 @@
 
-const cameraElement = document.querySelector('.camera');
-const containerElement = document.querySelector('.container');
-const circleElement = document.getElementById('circle');
-
-
-/*cameraElement.style.zIndex = '2';
-containerElement.style.zIndex = '2';
-circleElement.style.zIndex = '2';*/
-
-
-
-
-
-
 var mouseX = 0, mouseY = 0;
 var container = document.querySelector('.container');
 var containerRect = container.getBoundingClientRect();
@@ -94,3 +80,4 @@ const drop = () => {
 
 setInterval(drop, 30);
 
+ 
