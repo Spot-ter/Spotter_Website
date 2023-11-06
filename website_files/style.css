@@ -115,6 +115,7 @@ a:link{
     background-color: transparent;
 
 }
-.image{
-    transform: translate(100px, 100px);
+.image {
+    position: relative;
+    transform: translate(-5%, 35%);
 }
