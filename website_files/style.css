@@ -52,20 +52,9 @@ a:link{
 }
 
 .camera{
-    /* display: flex;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    height:900px;
-    z-index: 998;
-    position: absolute; */
     width:550px;
     height: 500px;
     position: absolute;
-    /* overflow: hidden; */
-    
-    /* border-radius: 50%; */
     padding:10px;
     top: 48.7%;
     left: 50%;
