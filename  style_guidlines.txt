@@ -13,4 +13,6 @@ For the about page, the font size of the text is 40px.
 For the contact page the font size is 16px. 
 For the feedback page the font size is 12px.
 
-The website consist 
+The website consist of a camera that are fully centered
+For the about page, the image is on the left and text is on the right 
+For all the pages we used a border radius
