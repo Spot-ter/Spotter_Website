@@ -1,0 +1,11 @@
+Color-scheme: 
+We are using the color black for the background. 
+For the header we used the white color.
+For the text we used white as a color. 
+For the background animation we used a neon green color. 
+We have some gray for the images. 
+
+Typography: 
+For the logo name we used Anonymous Pro as a font and monospace. 
+The rest of the text is written in the family font Times New Romans.
+The font size for the name of our compagny is 70px. 
