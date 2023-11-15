@@ -9,3 +9,8 @@ Typography:
 For the logo name we used Anonymous Pro as a font and monospace. 
 The rest of the text is written in the family font Times New Romans.
 The font size for the name of our compagny is 70px. 
+For the about page, the font size of the text is 40px. 
+For the contact page the font size is 16px. 
+For the feedback page the font size is 12px.
+
+The website consist 
