@@ -155,9 +155,6 @@ form button{
     outline: none;
     margin: 20px auto 0;
     border-radius: 30px;
-<<<<<<< HEAD
-}
-=======
 
 }
 
@@ -215,4 +212,3 @@ form button{
 .pricing-table button:hover {
     background-color: #45a049;
 }
->>>>>>> 4a6693cc09a10ffee8b0fdcdd14dcf8078f48292
