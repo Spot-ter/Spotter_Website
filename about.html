@@ -1,17 +1,81 @@
-<html>
-    <head>
-        <title>Spotter</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="style.css" />
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        .headerContent {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            /* Add your logo styling here */
+        }
+
+        .menu {
+            /* Add your navigation styling here */
+        }
+
+        .links {
+            list-style: none;
+            display: flex;
+        }
+
+        .link {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .custom-box {
+            width: 70%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f5060600;
+            color: #ffffff;
+            border: 2px solid #067df300;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .image-container {
+            text-align: center;
+        }
+
+        .image {
+            width: 100%;
+            height: auto;
+            max-width: 1200px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
     <header>
         <div class="headerContent">
-            <a href="#" class="logo"></a>
+            <a href="#" class="logo">Spotter</a>
             <nav class="menu">
                 <ul class="links">
                     <li><a href="index.html" class="link">Home</a></li>
-                    <li><a href="about.html" class="link">Why spotter?</a></li>
+                    <li><a href="about.html" class="link">Why Spotter?</a></li>
                     <li><a href="pricing.html" class="link">Pricing</a></li>
                     <li><a href="contact.html" class="link">Contact</a></li>
                 </ul>
@@ -19,41 +83,16 @@
         </div>
     </header>
 
-    <body>
-        <div class="custom-box">
-            No more wandering around!<br>
-            Imagine walking into a big room with many seats. And having to keep looking around to find available seats. Instead, with spotter, by just a quick glance at a screen, you can see 
-            green squares for available seats and red squares for taken ones. It's the modern solution for simple and hassle free seating.In addition, it also features camera recordings and 
-            anti-cheat measures that track hand and head movement. To make your experience even more better there's an analytics option that let's you know peak times and popular spots. 
-            It's not just about finding seats, it's about enhancing the entire experience!
-        </div>
-        <style>
-            .custom-box {
-                width: 1500px;
-                height: 500px;
-                background-color: #f5060600; 
-                color:#ffffff;
-                border: 2px solid #067df300;
-                margin: 20px;
-                position: absolute;
-                bottom: -100px;
-                text-align: center;
-                text-justify: distribute-all-lines;
-                left: 100px;
-                font-size: 30px;
-            }
-            .image {
-                width:1200px;
-                height: 500px;
-                position: relative;
-                align-items: center;
-                left: 242px;
-                bottom: 180px;
-                border-radius: 50px;
-            }
-        </style>
-        <div class="image">
-            <img src="about_camera.png" alt="spotter camera" class="image">
-        </div>
-    </body>
+    <div class="custom-box">
+        No more wandering around!<br>
+        Imagine walking into a big room with many seats. And having to keep looking around to find available seats. Instead, with Spotter, by just a quick glance at a screen, you can see 
+        green squares for available seats and red squares for taken ones. It's the modern solution for simple and hassle-free seating. In addition, it also features camera recordings and 
+        anti-cheat measures that track hand and head movement. To make your experience even better, there's an analytics option that lets you know peak times and popular spots. 
+        It's not just about finding seats; it's about enhancing the entire experience!
+    </div>
+
+    <div class="image-container">
+        <img src="about_camera.png" alt="Spotter Camera" class="image">
+    </div>
+</body>
 </html>
